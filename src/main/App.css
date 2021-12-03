@@ -1,0 +1,75 @@
+:root {
+    --bg-dark: #1A2F3A;
+
+    --logo-height: 100px;
+    --header-height: 100px;
+    --menu-top-height: 70px;
+    --aside-width: 225px;
+    --footer-height: 40px;
+
+    --shadow: 
+        0 2px 23px 0 rgba(0, 0, 0, 0.1),
+        0 2px 49px 0 rgba(0, 0, 0, 0.06);
+}
+
+
+
+/* Layout em Grid */
+
+body {
+    margin: 0;
+}
+
+.app {
+    margin: 0;
+}
+
+.login {
+	background-color: #DDD;
+  }
+  .login.bg {
+	animation:slide 3s ease-in-out infinite alternate;
+	background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+	bottom:0;
+	left:-50%;
+	opacity:.5;
+	position:fixed;
+	right:-50%;
+	top:0;
+	z-index:-1;
+  }
+  
+  .login.bg2 {
+	animation-direction:alternate-reverse;
+	animation-duration:4s;
+  }
+  
+  .login.bg3 {
+	animation-duration:5s;
+  }
+  
+  .login {
+	background-color:rgba(255,255,255,.8);
+	border-radius:.25em;
+	box-shadow:0 0 .25em rgba(0,0,0,.25);
+	box-sizing:border-box;
+	left:50%;
+	padding:10vmin;
+	position:fixed;
+	text-align:center;
+	top:50%;
+	transform:translate(-50%, -50%);
+  }
+  
+  h1 {
+	font-family:monospace;
+  }
+  
+  @keyframes slide {
+	0% {
+	  transform:translateX(-25%);
+	}
+	100% {
+	  transform:translateX(25%);
+	}
+  }
